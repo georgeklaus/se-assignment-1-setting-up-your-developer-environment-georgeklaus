@@ -11,7 +11,13 @@ This assignment aims to familiarize you with the tools and configurations necess
 #Tasks:
 
 1. Select Your Operating System (OS):
-   Choose an operating system that best suits your preferences and project requirements. Download and Install Windows 11. https://www.microsoft.com/software-download/windows11
+   Choose an operating system that best suits your preferences and project requirements. Download and Install Windows 11. https://www.microsoft.com/software-download/windows11  
+    (1. Install Linux
+    Steps:
+    1. Download Ubuntu from [ubuntu.com](https://ubuntu.com/download).
+    2. Create a bootable USB.
+    3. Install Ubuntu following on-screen instructions.
+    )
 
 2. Install a Text Editor or Integrated Development Environment (IDE):
    Select and install a text editor or IDE suitable for your programming languages and workflow. Download and Install Visual Studio Code. https://code.visualstudio.com/Download
