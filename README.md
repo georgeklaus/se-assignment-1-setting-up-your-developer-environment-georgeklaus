@@ -6,19 +6,12 @@ Setup Development Environment
 #Assignment: Setting Up Your Developer Environment
 
 #Objective:
-This assignment aims to familiarize you with the tools and configurations necessary to set up an efficient developer environment for software engineering projects. Completing this assignment will give you the skills required to set up a robust and productive workspace conducive to coding, debugging, version control, and collaboration.
+This assignment aims to familiarize you with the tools and configurations necessary to set up an efficient developer environment for software engineering projects. Completing this assignment will give you the skills required to set up a robust and productive workspace conducive to coding, debugging, version control, and collaboration. (PROJECT ANSWERS AT THE END OF THE PAGE)
 
 #Tasks:
 
 1. Select Your Operating System (OS):
    Choose an operating system that best suits your preferences and project requirements. Download and Install Windows 11. https://www.microsoft.com/software-download/windows11  
-    (1. Install Linux
-    Steps:
-    1. Download Ubuntu from [ubuntu.com](https://ubuntu.com/download).
-    2. Create a bootable USB.
-    3. Install Ubuntu following on-screen instructions.
-    )
-
 2. Install a Text Editor or Integrated Development Environment (IDE):
    Select and install a text editor or IDE suitable for your programming languages and workflow. Download and Install Visual Studio Code. https://code.visualstudio.com/Download
 3. Set Up Version Control System:
@@ -58,3 +51,79 @@ Submit your document and GitHub repository link through the designated platform 
 - Adherence to submission guidelines and deadlines.
 
 Note: Feel free to reach out for clarification or assistance with any aspect of the assignment.
+
+ANSWERS OF THE PROJECT:
+
+1. Install Linux
+### Steps:
+ 1. Download Ubuntu from [ubuntu.com](https://ubuntu.com/download).
+ 2. Create a bootable USB. -Use a tool like 'dd' command (for Linux) to create a bootable USB drive.
+ 3. Install Ubuntu following on-screen instructions.
+
+2. ## 2. Install Visual Studio Code
+### Steps:
+1. Download the .deb package from [Visual Studio Code](https://code.visualstudio.com/Download).
+2. Open terminal and navigate to the download location.
+3. Install with `sudo dpkg -i code*.deb`.
+4. Fix dependencies if there is any with  `sudo apt-get install -f`.
+
+ 3. Set Up Version Control System
+### Steps:
+1. Install Git with `sudo apt-get install git`.
+2. Configure Git with user information. (git config --global user.name "george",
+git config --global user.email "georgerubinga@gmail.com"
+)
+3. Create a GitHub account and a new repository. (Sign Up:
+
+Go to GitHub and sign up for an account if you don’t already have one.
+Create a New Repository:
+
+Log in to GitHub.
+Click on the New button to create a new repository.
+Provide a repository name, description (optional), and choose between public or private.
+)
+4. Initialize a Git repository locally, add files, and push to GitHub. (1.Navigate to your project directory
+2.Initialize the Git repository(git init)
+3.Add files and make the first commit(git add .
+git commit -m "Initial commit")
+4.Link the local repository to GitHub (git remote add origin https://github.com/george/yourrepository.git
+git push -u origin master))
+
+
+## 4. Install Necessary Programming Languages and Runtimes
+### Steps:
+1. Install Python with `sudo apt-get install python3 python3-pip`.
+2. Verify installations (python3 --version
+pip3 --version)
+
+## 5. Install Package Managers
+### Steps:
+1. Verify `pip3` installation.
+
+
+## 6. Configure a Database (MySQL)
+### Steps:
+1. Install MySQL with `sudo apt-get install mysql-server`.
+2. Secure MySQL installation.
+3. Start MySQL service and verify.
+4. Log in to MySQL.
+
+## 7. Set Up Development Environments and Virtualization (Optional)
+### Steps:
+1. Install Docker following provided commands.
+2. Verify Docker installation.
+
+## 8. Explore Extensions and Plugins
+### Steps:
+1. Install recommended extensions in Visual Studio Code.
+
+## Reflection
+### Challenges:
+1. Dependency issues during Visual Studio Code installation.
+2. MySQL configuration prompts.
+3. Correctly linking local Git repository to GitHub.
+
+### Strategies to Overcome:
+1. Research and follow official documentation.
+2. Step-by-step execution.
+3. Frequent verification of installations and configurations.
