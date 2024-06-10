@@ -52,7 +52,7 @@ Submit your document and GitHub repository link through the designated platform 
 
 Note: Feel free to reach out for clarification or assistance with any aspect of the assignment.
 
-ANSWERS OF THE PROJECT:
+**ANSWERS OF THE PROJECT:**
 
 1. Install Linux
 ### Steps:
