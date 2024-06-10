@@ -56,43 +56,43 @@ Note: Feel free to reach out for clarification or assistance with any aspect of 
 
 1. Install Linux
 ### Steps:
- 1. Download Ubuntu from [ubuntu.com](https://ubuntu.com/download).
- 2. Create a bootable USB. -Use a tool like 'dd' command (for Linux) to create a bootable USB drive.
- 3. Install Ubuntu following on-screen instructions.
+ 1. I downloaded Ubuntu from [ubuntu.com](https://ubuntu.com/download).
+ 2. I created a bootable USB. -Use a tool like 'dd' command (for Linux) to create a bootable USB drive.
+ 3. I then installed Ubuntu following on-screen instructions.
 
 2. ## 2. Install Visual Studio Code
 ### Steps:
-1. Download the .deb package from [Visual Studio Code](https://code.visualstudio.com/Download).
-2. Open terminal and navigate to the download location.
-3. Install with `sudo dpkg -i code*.deb`.
+1. I downloaded the .deb package from [Visual Studio Code](https://code.visualstudio.com/Download).
+2. Opened terminal and navigated to the download location.
+3. I used `sudo dpkg -i code*.deb` to install it.
 4. Fix dependencies if there is any with  `sudo apt-get install -f`.
 
  3. Set Up Version Control System
 ### Steps:
-1. Install Git with `sudo apt-get install git`.
-2. Configure Git with user information. (git config --global user.name "george",
+1. i installed Git with `sudo apt-get install git`.
+2. Configured Git with my user information. (git config --global user.name "george",
 git config --global user.email "georgerubinga@gmail.com"
 )
-3. Create a GitHub account and a new repository. (Sign Up:
+3. I createed a GitHub account and a new repository. (Sign Up:
 
 Go to GitHub and sign up for an account if you don’t already have one.
-Create a New Repository:
+Created a New Repository:
 
-Log in to GitHub.
-Click on the New button to create a new repository.
-Provide a repository name, description (optional), and choose between public or private.
+Loged in to GitHub.
+Clicked on the New button to create a new repository.
+Provided a repository name, description (optional), and choose between public or private.
 )
-4. Initialize a Git repository locally, add files, and push to GitHub. (1.Navigate to your project directory
+4. Initialize a Git repository locally, add files, and push to GitHub. (1.Navigate to the project directory
 2.Initialize the Git repository(git init)
 3.Add files and make the first commit(git add .
 git commit -m "Initial commit")
-4.Link the local repository to GitHub (git remote add origin https://github.com/george/yourrepository.git
+4.I linked the local repository to GitHub (git remote add origin https://github.com/george/yourrepository.git
 git push -u origin master))
 
 
 ## 4. Install Necessary Programming Languages and Runtimes
 ### Steps:
-1. Install Python with `sudo apt-get install python3 python3-pip`.
+1. I installed Python with `sudo apt-get install python3 python3-pip`.
 2. Verify installations (python3 --version
 pip3 --version)
 
@@ -103,29 +103,47 @@ pip3 --version)
 
 ## 6. Configure a Database (MySQL)
 ### Steps:
-1. Install MySQL with `sudo apt-get install mysql-server`.
-2. Secure MySQL installation (sudo mysql_secure_installation
+1. I installed MySQL with `sudo apt-get install mysql-server`.
+2. Secured MySQL installation (sudo mysql_secure_installation
 )
-3. Start MySQL service and verify (sudo systemctl start mysql).
+3. Started MySQL service and verified (sudo systemctl start mysql).
 4. Verify MySQL service status (sudo systemctl status mysql)
-5. Log in to MySQL (sudo mysql -u root -p)
+5. I loged in to MySQL (sudo mysql -u root -p)
 
 ## 7. Set Up Development Environments and Virtualization (Optional)
 ### Steps:
-1. Install Docker following provided commands.
-2. Verify Docker installation.
+1. Install Docker
+Docker allows you to package and run applications in isolated environments called containers.
+
+1. Update the package list (sudo apt-get update)
+2. I installed prerequisites (sudo apt-get install apt-transport-https ca-certificates curl software-properties-common)
+3. Added Docker’s official GPG key (curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -)
+4. Set up the stable repository (sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable")
+5. I installed Docker CE (sudo apt-get update
+sudo apt-get install docker-ce)
+6. Verify Docker installation (sudo docker run hello-world)
 
 ## 8. Explore Extensions and Plugins
 ### Steps:
-1. Install recommended extensions in Visual Studio Code.
+I installed recommended extensions in Visual Studio Code to enhance my development experience in Visual Studio Code by installing useful extensions.
+
+1. Opened Visual Studio Code.
+2. Go to the Extensions view by clicking the square icon in the sidebar or pressing Ctrl+Shift+X.
+3. Searched for and installed the following extensions:
+Python: Provides IntelliSense, linting, and debugging for Python.
+GitLens: Enhances Git capabilities within VS Code.
+Docker: Adds support for Docker containers.
+Prettier - Code formatter: Ensures consistent code formatting.
 
 ## Reflection
 ### Challenges:
-1. Dependency issues during Visual Studio Code installation.
-2. MySQL configuration prompts.
-3. Correctly linking local Git repository to GitHub.
 
-### Strategies to Overcome:
-1. Research and follow official documentation.
-2. Step-by-step execution.
-3. Frequent verification of installations and configurations.
+1. Dependency Issues: While installing Visual Studio Code, there were missing dependencies that needed to be resolved with sudo apt-get install -f.
+2. MySQL Configuration: Securing the MySQL installation required careful attention to follow the prompts correctly.
+3. GitHub Repository Setup: Ensuring the correct link between the local repository and GitHub required precise URL configuration.
+
+
+**Strategies to Overcome Challenges:**
+1. Research: I utilized official documentation and community forums to resolve dependency issues.
+2. Step-by-Step Execution: I followed each step methodically to avoid missing any configurations, especially during MySQL setup.
+3. Verification: I frequently verified installations and configurations to catch and fix issues early.
