@@ -6,7 +6,7 @@ Setup Development Environment
 #Assignment: Setting Up Your Developer Environment
 
 #Objective:
-This assignment aims to familiarize you with the tools and configurations necessary to set up an efficient developer environment for software engineering projects. Completing this assignment will give you the skills required to set up a robust and productive workspace conducive to coding, debugging, version control, and collaboration. (PROJECT ANSWERS AT THE END OF THE PAGE)
+This assignment aims to familiarize you with the tools and configurations necessary to set up an efficient developer environment for software engineering projects. Completing this assignment will give you the skills required to set up a robust and productive workspace conducive to coding, debugging, version control, and collaboration. (**PROJECT ANSWERS AT THE END OF THE PAGE**)
 
 #Tasks:
 
@@ -98,15 +98,17 @@ pip3 --version)
 
 ## 5. Install Package Managers
 ### Steps:
-1. Verify `pip3` installation.
+ 1. Verify `pip3` installation.
 
 
 ## 6. Configure a Database (MySQL)
 ### Steps:
 1. Install MySQL with `sudo apt-get install mysql-server`.
-2. Secure MySQL installation.
-3. Start MySQL service and verify.
-4. Log in to MySQL.
+2. Secure MySQL installation (sudo mysql_secure_installation
+)
+3. Start MySQL service and verify (sudo systemctl start mysql).
+4. Verify MySQL service status (sudo systemctl status mysql)
+5. Log in to MySQL (sudo mysql -u root -p)
 
 ## 7. Set Up Development Environments and Virtualization (Optional)
 ### Steps:
